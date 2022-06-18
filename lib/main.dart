@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
+    //Material App
     return MaterialApp(
       home: HomeScreen(),
     );
@@ -33,14 +34,18 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
 
+      //appbar
         appBar: AppBar(
           title: Text("Flutter Apps"),
         ),
 
+
+        //body
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            //first text
             Text(
               "Text Style flutter",
               style: TextStyle(
@@ -52,6 +57,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   letterSpacing: 5.0
               ),
             ),
+
+            //secound text
             Text(
               "Text Style flutter2",
               style: TextStyle(
@@ -63,6 +70,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   letterSpacing: 5.0
               ),
             ),
+
+            //third Text
             Text(
               "Text Style flutter3",
               style: TextStyle(
@@ -75,6 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
 
+            //icon
             Icon(
               Icons.add_a_photo_rounded,
               size: 50.0,
@@ -87,15 +97,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   offset: Offset(6, 5)
                 )
               ],
-            )
+            )//End Icon
 
           ],
-        ),
+        ),//end column
 
 
 
 
 
+        //floatingactionbutton
         floatingActionButton: FloatingActionButton(
           onPressed: (){
             setState((){
@@ -103,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
             });
           },
           child: Text("Click"),
-        )
+        )//end
 
 
     );
