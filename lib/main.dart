@@ -42,65 +42,69 @@ class _HomeScreenState extends State<HomeScreen> {
 
         //body
         body: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            //first text
-            Text(
-              "Text Style flutter",
-              style: TextStyle(
-                // fontFamily: ,
-                  color: Colors.white,
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  backgroundColor: Colors.black,
-                  letterSpacing: 5.0
+            Container(
+              width: 100,
+              height: 100,
+
+              decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(100)
+              ),
+              child: Center(
+                child: Text(
+                  "Column 1",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              width: 100,
+              height: 100,
+
+              decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(100)
+              ),
+              child: Center(
+                child: Text(
+                  "Column 2",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              width: 100,
+              height: 100,
+
+              decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(100)
+              ),
+              child: Center(
+                child: Text(
+                  "Column 2",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold
+                  ),
+                ),
               ),
             ),
 
-            //secound text
-            Text(
-              "Text Style flutter2",
-              style: TextStyle(
-                // fontFamily: ,
-                  color: Colors.white,
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  backgroundColor: Colors.red,
-                  letterSpacing: 5.0
-              ),
-            ),
-
-            //third Text
-            Text(
-              "Text Style flutter3",
-              style: TextStyle(
-                // fontFamily: ,
-                  color: Colors.white,
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  backgroundColor: Colors.blue,
-                  letterSpacing: 5.0
-              ),
-            ),
-
-            //icon
-            Icon(
-              Icons.add_a_photo_rounded,
-              size: 50.0,
-              color: Colors.amber,
-              shadows: [
-                BoxShadow(
-                  color: Colors.black,
-                  blurRadius: 50.0,
-                  spreadRadius: 20.0,
-                  offset: Offset(6, 5)
-                )
-              ],
-            )//End Icon
 
           ],
-        ),//end column
+        ),
+
 
 
 
